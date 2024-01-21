@@ -1,0 +1,13 @@
+{
+
+    "LogDir": "logs",
+
+    "pathSourceDir": "C:\\robo\\source",
+
+    "pathTargetDir": "C:\\robo\\target",
+
+    "myTime": "CreationTime",
+
+    "ExcludedExtensions": [".log", ".xml", ".csv"]
+
+}
