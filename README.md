@@ -1,9 +1,6 @@
 # LOGSCOPY
 ## Framework System Logs Backup Script (logscopy.ps1)
 
-**Author:** Scott Richards
-**Date:** December 2023
-
 This PowerShell script, `logscopy.ps1`, is designed to automate the backup of system logs using a JSON configuration file. It copies log files from a source directory to a target directory, calculates MD5 hashes for both source and target files, and logs the backup process.
 
 ## Prerequisites
