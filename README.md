@@ -33,3 +33,33 @@ To run the script, follow these steps:
 
 ```powershell
 .\logscopy.ps1
+```
+
+## Logging
+The script creates a log file with a timestamp in the specified LogDir directory. You can refer to this log file for detailed information about the backup process.
+
+## File Backup Process
+The script follows these steps to back up log files:
+
+It calculates the local timezone offset and appends it to the log file name.
+The script iterates through log files in the source directory, excluding those with extensions listed in ExcludedExtensions.
+For each file, it calculates the MD5 hash of the source file.
+Log files are organized in the target directory based on the year, month, and day of each log entry.
+If the target directory does not exist, the script creates it.
+Files are copied from the source directory to the target directory.
+The script calculates the MD5 hash of the copied files.
+If the MD5 hashes of the source and target files match, the source file is deleted.
+
+## Notifications
+The script provides a notification feature that triggers a Windows toast notification when the backup process is completed successfully.
+
+## Example Usage
+Here is an example of how to run the script:
+
+```powershell
+.\logscopy.ps1
+```
+
+License
+This script is open source and is provided under the MIT License. For details, please see the LICENSE file included in this repository.
+
